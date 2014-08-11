@@ -1,5 +1,7 @@
+(1)コード交換前
+
 https://github.com/skanno/skanno-readable-cod/blob/master/recipe.php
-変数名が省略されてなくてわかりやすいので、処理が理解しやすい。
+変数名が省略されてなくてわかりやすいので、処理が字面からも理解しやすい。
 （$recipeDataFileName、$targetIdと$idの違い）
 条件式が少ないので読むときに戻ったりしないですむ。
 シンプルなので基本的に上から下へ流れるだけで理解できる。
@@ -7,6 +9,7 @@ phpうろ覚えの私でも一番理解できました。わからない処理がないです。
 
 https://github.com/amioka/amioka-readble-code/blob/master/recipe.php
 コメントが多いので、処理を読む前に概要を念頭における。
+処理が少ないので頭に入ってきやすい。
 
 https://github.com/h-kouno/h-kouno-readable-code/blob/master/recipe.php
 コメントで処理概要が先につかめる。
@@ -17,7 +20,22 @@ https://github.com/sjna/naoki.saijo-sezemi-2014-readable-code-2/blob/master/reci
 見た感じ、複雑な条件式や処理がないので、知らない言語でもだいたいわかる。
 
 
+https://github.com/flame1980/flame1980-sezemi-2014-readable-code-2/blob/master/Recipe.php
+なんとなく、進んでる課題よりも先に、色んな要件の追加があっても対応できるようにしているな、というのが想像できました。
+ただおそらく私のようなほとんど初心者にはわかりにくく、ある程度以上の技術と開発経験がある人だと「その後の汎用性」が理解できるのだと思います。
 
+https://github.com/Ryooooota/Ryooooota-readable-code/blob/master/README.md
+メモにデータファイルの記述例などがあって、意図がわかりやすい。
+
+
+(2)コード交換後
+
+https://github.com/hmasuda/amioka-readble-code/blob/master/recipe.php
+    $recipe_id = $recipe[0];
+    $recipe_name = $recipe[1];
+    echo "$recipe_id: $recipe_name\n";
+レシピIDとレシピ名を両方変数に入れてから
+１行で表示としたので、何を表示しようとしてるのかわかりやすい。
 
 
 
